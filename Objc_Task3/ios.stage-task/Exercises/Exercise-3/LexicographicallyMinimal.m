@@ -11,7 +11,9 @@
 
 
 -(NSString *)findLexicographicallyMinimalForString1:(NSString *)string1 andString2:(NSString *)string2 {
-    
+    if ([string1 length] == 0 || [string2 length] == 0) {
+        return nil;
+    }
     NSMutableString *mString1 = [NSMutableString stringWithString:string1];
     NSMutableString *mString2 = [NSMutableString stringWithString:string2];
     NSMutableString *resultString = [NSMutableString string];
