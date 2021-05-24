@@ -37,7 +37,7 @@
     
     
     if ([mString1 length] !=0) {
-        [resultString appendString:mString1 ];
+        [resultString appendString:mString1];
     } else {
         [resultString appendString:mString2];
     }
